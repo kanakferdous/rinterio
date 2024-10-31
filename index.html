@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rinterio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Manrope Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- DaisyUI and Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          spacing: {
+            '50': '50px',
+          },
+          backgroundImage: {
+            'white-gradient-horizontal': 'linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0))',
+          },
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+          },
+          colors: {
+            rinterio_green: '#ABEF5F',
+            rinterio_green_50: 'rgba(171, 239, 95, 0.5)',
+            rinterio_black: '#1C1C1C',
+            rinterio_pink: '#E7C1D3',
+            rinterio_yellow: '#EFDA6E',
+            rinterio_paste: '#A4DAC3',
+            rineteri_blue: '#77AAEA',
+            rinterio_background: '#F4F4F4',
+          },
+        },
+      },
+      plugins: [
+        function({ addUtilities }) {
+          addUtilities({
+            '.text-stroke': {
+              '-webkit-text-stroke': '1px',
+            },
+            '.text-stroke-xl': {
+              '-webkit-text-stroke': '2px',
+            },
+          });
+        },
+      ],
+    }
+  </script>
+
+</head>
+<body class="bg-rinterio_background">
+  <main>
+    <header class="w-full bg-white-gradient-horizontal">
+      <div class="mx-auto px-[125px] w-full">
+
+        <!-- Navigation Section -->
+        <div class="pt-50 flex items-center justify-between">
+          <!-- Logo Section -->
+          <div class="flex items-center space-x-2">
+            <div class="w-8 h-8 p-2 flex items-center justify-center text-rinterio_black bg-rinterio_green rounded-full">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.007 2.05932L1.0033 13.0557" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h1 class="text-[32px] leading-none font-extrabold text-[#212121]">Rinterio</h1>
+          </div>
+
+          <!-- Navigation Links -->
+          <nav class="flex space-x-[37.5px] text-base leading-none">
+            <a href="#" class="text-[#494949] font-extrabold">Home</a>
+            <a href="#" class="text-[#737373] font-normal">Services</a>
+            <a href="#" class="text-[#737373] font-normal">Portfolio</a>
+            <a href="#" class="text-[#737373] font-normal">Blogs</a>
+            <a href="#" class="text-[#737373] font-normal">Contact Us</a>
+          </nav>
+
+          <!-- Icons and Button -->
+          <div class="flex items-center space-x-4">
+            <!-- Search Icon -->
+            <button class="w-[48px] h-[48px] p-[10px] bg-[#FFFFFF] border border-[#E9E9E9] rounded-full flex items-center justify-center">
+              <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.5075 17.5098L22.006 22.0113" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20.0096 11.0104C20.0113 6.03982 15.9832 2.00904 11.0126 2.00739C6.04207 2.00573 2.01129 6.03383 2.00964 11.0044C2.00799 15.975 6.03609 20.0057 11.0066 20.0074C15.9772 20.009 20.008 15.981 20.0096 11.0104Z" stroke="#737373" stroke-width="1.5" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+            <!-- Cart Icon -->
+            <button class="w-[48px] h-[48px] p-[10px] bg-[#FFFFFF] border border-[#E9E9E9] rounded-full flex items-center justify-center">
+              <svg width="24" height="24" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.00795 16.028L15.2711 16.0304C19.7587 16.0319 20.4422 13.2129 21.2713 9.1015C21.5104 7.91561 21.63 7.32267 21.3431 6.92751C21.0561 6.53235 20.5058 6.53216 19.4052 6.5318L6.01111 6.52734" stroke="#737373" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M8.00795 16.0282L5.39083 3.54225C5.16855 2.65184 4.36878 2.02698 3.45105 2.02668L2.5126 2.02637" stroke="#737373" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M8.88797 16.0283L8.47653 16.0282C7.11318 16.0277 6.00758 17.1786 6.00711 18.5987C6.00703 18.8354 6.19117 19.0274 6.4184 19.0275L17.507 19.0312" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.506 22.0288C11.3344 22.0291 12.0062 21.3577 12.0065 20.5293C12.0067 19.7009 11.3354 19.0291 10.507 19.0288C9.67853 19.0285 9.00673 19.6999 9.00646 20.5283C9.00618 21.3567 9.67753 22.0285 10.506 22.0288Z" stroke="#737373" stroke-width="1.5"/>
+                <path d="M17.506 22.0313C18.3344 22.0315 19.0062 21.3602 19.0065 20.5318C19.0067 19.7033 18.3354 19.0315 17.507 19.0313C16.6785 19.031 16.0067 19.7023 16.0065 20.5308C16.0062 21.3592 16.6775 22.031 17.506 22.0313Z" stroke="#737373" stroke-width="1.5"/>
+              </svg>
+            </button>
+
+            <!-- Book Consult Button -->
+            <a href="#" class="flex items-center space-x-2 px-5 py-3 bg-rinterio_green rounded-full">
+              <span class="text-xl font-extrabold text-rinterio_black leading-none">Book Consult</span>
+              <div class="w-8 h-8 p-[10px] bg-rinterio_black rounded-full flex items-center justify-center">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.007 2.05932L1.0033 13.0557" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Banner Section -->
+        <div class="flex flex-col items-center justify-center pt-10 pb-24">
+          <img src="assets/banner.png" alt="">
+          <div class="mt-6 mb-8 flex flex-col items-center justify-center gap-6">
+            <h2 class="text-[64px] font-extrabold color-rinterio_black text-center text-stroke-xl w-4/5">This barn-style house captivates with unique appeal.</h2>
+            <p class="text-base text-[#494949] w-2/3 text-center">This barn house enchants with a mix of rustic elegance and modern style, showcasing aged wood, smooth metal finishes, and expansive windows that fill the interior with abundant natural light.</p>
+          </div>
+          <a href="#" class="flex items-center space-x-2 px-5 py-3 bg-rinterio_green_50 border border-rinterio_green rounded-full">
+            <span class="text-xl font-extrabold text-[#212121] leading-none">View Details</span>
+            <div class="w-8 h-8 p-2 flex items-center justify-center text-rinterio_black bg-rinterio_green rounded-full">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.007 2.05932L1.0033 13.0557" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M6.00728 1.18866C6.00728 1.18866 11.6409 0.715645 12.4957 1.57084C13.3503 2.42604 12.8734 8.05944 12.8734 8.05944" stroke="#1C1C1C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+    </main>
+  </main>
+</body>
+</html>
